@@ -4,15 +4,17 @@ arduinoyun_temp
 Check the temperature and humidity in any room. 
 
 # Arduino YUN to give the temperature in any room.
-A little application that used a DHT22 temperature sensor attached to a Arduino YUN using a combination of the bridge 
-librarary and node.js application.
+A little application that used a DHT22 temperature sensor attached to a Arduino YUN using a combination of the bridge librarary and node.js application.
 
 The node.js part is not really nessesary but I had two reason to add node.js
 * I'm in the process of learning node.js
 * as I started to write arduino code it was a lot of string manipulation to make the web pages.
+* why reimplement something that's working. I did look into using bridge with node directly, but didn't like how the solution turned out. But check out this - http://www.tigoe.com/pcomp/code/arduinowiring/1216/ 
 
 So I deceided to add node.js so that the arduino sketch become as simple as possiblre and then adding the website 
 parts with node.js.
+
+The sketch is based on the bridge exmaple: http://arduino.cc/en/Tutorial/Bridge
 
 ## Parts
 * Arduino YUN - http://arduino.cc/en/Main/ArduinoBoardYun?from=Products.ArduinoYUN
